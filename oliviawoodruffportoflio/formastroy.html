@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="story.html" method="GET">
+        <input type="text" name="animal-1" id="animal-1" required>
+       <br>
+       <label  for="animal-2"> Another Animal</label>
+       <br>
+       <input type="text" name="animal-2" id="animal-2" required>
+       <br>
+       <label  for="adj-1"> Adjective (past tense)</label>
+       <br>
+       <input type="text" name="adj-1" id="adj-1" required>
+       <br>
+        <label  for="verb-1"> Verb (ends in -ing)</label>
+       <br>
+       <input type="text" name="verb-1" id="verb-1" required>
+       <br>
+           <label  for="num-1">Number</label>
+       <br>
+       <input type="text" name="num-1" id="num-1" required>
+       <br>
+        
+       <span>  
+       
+     
+      <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+      <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+  
+  
+     </span>
+ <br>
+           <label  for="speed">ends in -er</label>
+       <br>
+       <select name="speed" id="speed">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<br>
+           <label  for="quote">Motivational Quotes</label>
+       <br>
+       <input type="text" name="quote" id="quote" required list"quote-choices">
+       <br>
+
+     
+       <input type="submit">
+
+      </form>
+      
+    </section>
+  </body>
+</html>
