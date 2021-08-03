@@ -1,0 +1,37 @@
+$ git branch
+* master
+  moma
+  whitney
+$ git branch -d moma
+error: The branch 'moma' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D moma'.
+$ git branch -D moma
+Deleted branch moma (was 978e5a1).
+$ git branch -D whitney
+Deleted branch whitney (was 9b384f9).
+$ git branch unoderedlist
+$ git add index.html
+$ git commit -m"add"
+On branch master
+nothing to commit, working directory clean
+$ git branch master
+fatal: A branch named 'master' already exists.
+$ git checkout master
+Already on 'master'
+$ git branch
+* master
+  unoderedlist
+$ git branch bigheading
+$ git checkout bigheading
+Switched to branch 'bigheading'
+$ git add .
+$ git commit -m"add"
+[bigheading db3be4f] add
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+$ git checkout master
+Switched to branch 'master'
+$ git merge bigheading
+Updating 1481f5a..db3be4f
+Fast-forward
+ index.html | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)

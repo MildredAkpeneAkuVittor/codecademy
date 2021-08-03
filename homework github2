@@ -1,0 +1,22 @@
+$ git clone maryrose-hw maryrose-hw-nts
+Cloning into 'maryrose-hw-nts'...
+done.
+$ pwd
+/home/ccuser/workspace/js-homework
+$ cd maryrose-hw-nts
+$ git branch
+* master
+$ git branch new-comments
+$ git checkout new-comments
+Switched to branch 'new-comments'
+$ git branch
+  master
+* new-comments
+$ git add homework.js
+$ git commit -m "new"
+[new-comments ece67ba] new
+ 1 file changed, 3 insertions(+)
+$ git push orign new-comments
+
+$ use cd ../maryrose-hw
+ 

@@ -1,0 +1,58 @@
+$ cdveggie-favorites
+bash: cdveggie-favorites: command not found
+$ cd veggie-favorites
+$ git add chili.txt
+$ git commit -m"chillinew"
+On branch master
+nothing to commit, working directory clean
+$ git commit -m"new"
+On branch master
+Changes not staged for commit:
+        modified:   chili.txt
+
+no changes added to commit
+$ git add chilli.txt
+fatal: pathspec 'chilli.txt' did not match any files
+$ git add chili.txt
+$ git commit -m"new"
+[master 7d00182] new
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+$ cd../veggie-clone
+bash: cd../veggie-clone: No such file or directory
+$ cd ../veggie-clone
+$ git fetch
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From /home/ccuser/workspace/recipe-book-a/veggie-favorites
+   0791520..7d00182  master     -> origin/master
+$ git branch master
+fatal: A branch named 'master' already exists.
+$ git branch
+* master
+$ git merge origin/master
+Updating 4681ee4..7d00182
+Fast-forward
+ chili.txt          | 16 ++++++++--------
+ margherita.txt     | 11 +++++++----
+ squash-lasagna.txt |  3 ++-
+ 3 files changed, 17 insertions(+), 13 deletions(-)
+$ git branch new-recipe
+$ git checkout new-recipe
+Switched to branch 'new-recipe'
+$ git add new-recipe
+fatal: pathspec 'new-recipe' did not match any files
+$ git add new-recipe.txt
+$ git commit -m"new"
+On branch new-recipe
+nothing to commit, working directory clean
+$ git add new-recipe.txt
+$ 
+$ git commit -m"new"
+[new-recipe cb15ed6] new
+ 1 file changed, 1 insertion(+)
+$ git fetch
+$ git checkout master
+Switched to branch 'master'
+$ git push 
