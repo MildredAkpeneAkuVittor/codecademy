@@ -1,0 +1,15 @@
+  git checkout HEAD portrait.txt
+
+  git add portrait.txt
+
+  git commit -m "eyebrows"
+
+  git add .
+
+  git commit -m "Date corrected"
+
+  git add .
+
+ git reset HEAD -- house.txt
+
+1 git commit -am "Change fixed"

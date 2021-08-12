@@ -1,0 +1,17 @@
+  git checkout HEAD road-not-taken.txt
+
+ git checkout -- oven-bird.txt
+
+  git diff fire-and-ice.txt
+
+ git add .
+
+  git reset HEAD -- fire-and-ice.txt
+
+ git add .
+
+ git commit -am "Changes in the files"
+
+ git revert HEAD
+
+  git checkout HEAD filename

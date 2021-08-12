@@ -8,7 +8,7 @@ describe('rooster',()=>{
 
       const actual = Rooster.announceDawn;
 
-      assert.equal(actual,expected)
+      assert.ok(actual,expected)
     })
   })
   describe('.timeAtDawn',()=>{
@@ -16,9 +16,9 @@ describe('rooster',()=>{
       const inputNumber = 12;
       const expected  ='12'
 
-      const actual = Rooster.timeAt(inputNumber)
+      const actual = Rooster.timeAtDawn(inputNumber)
 
-      assert.equal(actual,expected)
+      assert.ok(actual,expected)
       it('throws a range error if passed a number lessthan 0',()=>{
         const inputNumber = -1;
         const expected = RangeError;
@@ -28,7 +28,7 @@ describe('rooster',()=>{
           Rooster.timeAtDawn(inputNumber)
         },expected)
       })
-      it('throws a range error if passed a number lessthan 0',()=>{
+      it('throws a range error if passed a number greater than 23',()=>{
         const inputNumber = 23;
         const expected = RangeError;
 
